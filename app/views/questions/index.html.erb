@@ -1,0 +1,9 @@
+<h3>Questions that Jenn has been asked in the past...</h3>
+
+<ul>
+  <% @questions.each do |question| %>
+  <li>
+    <%= link_to question.body, question_path(question) %>
+  </li>
+  <% end %>
+</ul>
