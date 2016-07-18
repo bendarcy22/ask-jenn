@@ -3,7 +3,7 @@ class QuestionMailer < ApplicationMailer
     @question = question
 
     mail(
-      to: "example@salami.com",
+      to: "example@gmail.com",
       subject: "New Question from #{question.name}"
     )
   end
