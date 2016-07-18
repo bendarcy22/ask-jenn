@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="top-bar">
+    <ul class="menu">
+      <li class="menu-item"><%= link_to "Ask Jenn a Question", new_question_path %></li>
+      <li class="menu-item"><%= link_to "Past Questions for Jenn", questions_path %></li>
+    </ul>
+  </div>
+
   <div class="jennphoto"><img src="/images/askjenn.jpg" alt="ask jenn" /></div>
 
   <% flash.each do |name, msg| %>
